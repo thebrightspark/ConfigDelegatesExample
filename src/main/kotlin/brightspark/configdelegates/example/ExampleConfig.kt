@@ -8,7 +8,7 @@ object ExampleConfig : DelegatedConfig() {
 		defineInRange("testNumber", 0L, 0L, 1000L)
 	}
 
-	val mutableString: String by configMutable {
+	var mutableString: String by configMutable {
 		comment("Here's another comment")
 		define("mutableString", "default")
 	}
